@@ -5,15 +5,20 @@
     <title>练习注册和登录</title>
 </head>
 <body>
-    <h1 class="h">welcome to my website</h1>
-    <div class="choice" class="hide">
-        <a href="login.html" class="a1">登录</a>|
-        <a href="signup.html" class="a2">注册</a>
+    <div class="wrapper">
+        <img src="sleep.png">
+        <h1 class="h">welcome to my website</h1>
+        <div class="choice" class="hide">
+            <a href="login.html" class="a1">登录</a>|
+            <a href="signup.html" class="a2">注册</a>
+        </div>
+        <p>It is a really simple website,i just wanna try to storage messages.</p>
+        <p>when you login,you will goback to this page</p>
+        <p>I use "window.localtion.href='index.html'" to finish it.</p>
+
     </div>
-    <p>It is a really simple website,i just wanna try to storage messages.</p>
-    <p>when you login,you will goback to this page</p>
-    <p>I use "window.localtion.href='index.html'" to finish it.</p>
 <style>
+   
     .h{
         text-align: center;
     }
@@ -31,7 +36,16 @@
     p{
         text-align: center;
     }
+    img{
+        position:fixed ;
+        z-index: -100;
+        width: 600px;
+        height: 600px;
 
+        margin: 0 auto;
+        left: 0;/*脱离文档流  居中  要加这两行*/
+        right: 0;
+    }
 </style>
 <script>
 

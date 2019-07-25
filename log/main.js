@@ -13,7 +13,7 @@ function login() {
             warn2.innerText = '密码错误，请再次输入';
         }
         else{
-            alert("登录成功，即将回到首页");
+            alert("欢迎您"+name.value+",即将回到首页");
             setTimeout(function () {
                 window.location.href='index.html';
             },2000)
