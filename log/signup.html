@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>signup</title>
+</head>
+<body>
+<h1>注册</h1>
+<div class="sign-wrapper">
+    <div class="input-wrapper">
+        <div class="d1"><input type="text" placeholder="用户名" class="login-input1"/><div style="color: red; font-size: 12px" class="s1"></div></div>
+        <div class="d2"><input type="password" placeholder="密码" class="login-input2"/><div style="color: red;font-size: 12px" class="s2"></div></div>
+    </div>
+    <div class="confirm-wrapper">
+        <button class="y" onclick="sign()">确定</button>
+        <button class="n" onclick="cancel()">取消</button>
+    </div>
+    <p>已有账号？<a href="login.html">登录</a></p>
+</div>
+<style>
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    h1{
+        text-align: center;
+        color: red;
+    }
+    .sign-wrapper{
+        width: 400px;
+        height: 200px;
+        border: 1px solid rgba(222,12,12,0.4);
+        position: relative;
+        margin: 0 auto 0;/*水平居中*/
+    }
+    .input-wrapper{
+        width: 220px;
+        margin:30px auto 0;
+    }
+    .d1{
+
+        margin-bottom: 6px;
+    }
+    .d1 input{
+        width: 200px;
+        height: 30px;
+        border-color: red;
+    }
+    .d2{
+        margin-bottom: 10px;
+    }
+    .d2 input{
+        width: 200px;
+        height: 30px;
+        border-color: red;
+    }
+    .confirm-wrapper{
+        width: 100px;
+        margin:0 auto;
+    }
+    p{
+        text-align: center;
+    }
+</style>
+<script src="sign.js"></script>
+</body>
+</html>
